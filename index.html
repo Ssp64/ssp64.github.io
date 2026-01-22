@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samyak | Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.17.0/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Ssp's portfolio</h1>
+      <div class="nav-right">
+        <div class="menu-toggle" id="menu-btn">☰</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="settings-btn" aria-label="Settings">⚙️</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Settings Popup -->
+  <div id="settings-popup" class="hidden">
+    <h3>Customize</h3>
+    <div class="color-options">
+      <button class="color-btn" data-color="#ffb6c1" style="background:#ffb6c1;"></button>
+      <button class="color-btn" data-color="#66b2ff" style="background:#66b2ff;"></button>
+      <button class="color-btn" data-color="#32cd32" style="background:#32cd32;"></button>
+      <button class="color-btn" data-color="#ffd700" style="background:#d0c00b;"></button>
+      <button class="color-btn" data-color="#ff7f50" style="background:#ff7f50;"></button>
+    </div>
+    <button id="theme-toggle">Dark / Light</button>
+  </div>
+
+  <!-- Parallax Items -->
+  <div class="parallax-container">
+    <i class="parallax-item devicon-java-plain" style="top: 19%; left: 9%"></i>
+    <i class="parallax-item devicon-php-plain" style="top: 20%; left: 50%"></i>
+    <i class="parallax-item devicon-mysql-plain" style="top: 58%; left: 67%"></i>
+    <i class="parallax-item devicon-javascript-plain" style="top: 31%; left: 78%"></i>
+    <i class="parallax-item devicon-cplusplus-plain" style="top: 47%; left: 25%"></i>
+    <i class="parallax-item devicon-lua-plain" style="top: 50%; left: 5%"></i>
+    <i class="parallax-item devicon-ruby-plain" style="top: 83%; left: 64%"></i>
+    <i class="parallax-item devicon-c-plain" style="top: 85%; left: 28%"></i>
+    <i class="parallax-item devicon-python-plain" style="top: 80%; left: 10%"></i>
+    <i class="parallax-item devicon-rust-plain" style="top: 15%; left: 31%"></i>
+    <i class="parallax-item devicon-react-original" style="top: 89%; left: 84%"></i>
+    <i class="parallax-item devicon-html5-plain" style="top: 12%; left: 65%"></i>
+    <i class="parallax-item devicon-css3-plain" style="top: 59%; left: 90%"></i>
+    <i class="parallax-item devicon-git-plain" style="top: 17%; left: 90%"></i>
+    <i class="parallax-item devicon-vscode-plain" style="top: 78%; left: 46%"></i>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Hello, I'm <span>Ssp</span></h2>
+    <p>
+      A <span class="typing-text"></span>
+    </p>
+    <a href="assets/cv.pdf" class="btn" download>Download CV</a>
+  </section>
+
+  <section id="about" class="interactive-about">
+    <h2>About Me</h2>
+    
+    <div class="about-panels">
+      <div class="panel" data-title="Know Me" data-content="Hi! I am Samyak Tiwari, a self-taught polyglot programmer with a natural curiosity and a passion for continuous learning. I enjoy solving problems through code and constantly strive to improve my skills in order to create reliable and efficient solutions. Beyond just writing code, I focus on understanding how systems work, experimenting with new tools, and building projects that not only expand my knowledge but also make a real impact. My ultimate goal is to grow as a developer, contribute to meaningful projects, and continuously evolve in the ever-changing world of technology.">
+        <h3>About Me</h3>
+      </div>
+
+      <div class="panel" data-title="Experience">
+        <h3>Experience</h3>
+      </div>
+
+      <div class="panel" data-title="Education" data-content="12th Grade Completed (2025), Self-taught Programmer: HTML, CSS, JS, React, Python, C++, Learning MERN & AI Projects">
+        <h3>Education</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popup Card -->
+  <div class="popup-card hidden" id="popup-card">
+    <div class="popup-content" id="popup-content">
+      <span class="close-btn" id="close-btn">&times;</span>
+
+      <!-- Text area -->
+      <div class="popup-text-area" id="popup-text-area">
+        <h3 id="popup-title"></h3>
+        <p id="popup-text"></p>
+      </div>
+    </div>
+  </div>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Music-App</h3>
+        <p>This is a music app: Owl Jam</p>
+        <a href="https://github.com/Ssp64/Music-App" target="_blank">Link to Repository</a>
+      </div>
+      <div class="project-card">
+        <h3> Hotel-Management System</h3>
+        <p>Hotel Management system made in python using Tkinter.</p>
+        <a href="https://github.com/Ssp64/Hotel-Management-system" target="_blank">Link to Repository</a>
+      </div>
+      <div class="project-card">
+        <h3>Lava Lamp</h3>
+        <p>A simple CSS Lava Lamp Design</p>
+        <a href="https://github.com/Ssp64/SimpleLavaLampDesign" target="_blank">Link to Repository</a>
+      </div>
+      <div class="project-card">
+        <h3> Flight Booking System</h3>
+        <p>A Flight Booking system made using Python File I/O</p>
+        <a href="https://github.com/Ssp64/FlightBooking" target="_blank">Link to Repository</a>
+      </div>
+      <div class="project-card">
+        <h3>PhotoBooth</h3>
+        <p>A simple PhotoBooth</p>
+        <a href="https://github.com/Ssp64/PhotoBooth" target="_blank">Link to Repository</a>
+      </div>
+      <div class="project-card">
+        <h3> Alpha</h3>
+        <p>During the time 2023-24, I made this simple Voice-Assistant named: Alpha. Sharing it's first ever code (Version 1.0.0)</p>
+        <a href="https://github.com/Ssp64/VoiceAssistant" target="_blank">Link to Repository</a>
+      </div>
+      <div class="project-card">
+        <h3>Minecraft Block Game</h3>
+        <p>Made my own version of Minecraft in Ursina Python</p>
+        <a href="https://github.com/Ssp64/Minecraft" target="_blank">Link to Repository</a>
+      </div>
+      <div class="project-card">
+        <h3> Code-Editor</h3>
+        <p>A HTML, CSS and Javascript based Web dev online code editor (CodePen like)</p>
+        <a href="https://github.com/Ssp64/Hotel-Management-system" target="_blank">Link to Repository</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills-section">
+    <h2 class="section-title">Skills</h2>
+
+   
+
+    <div class="skills-grid">
+  <div class="skill-card html">
+    <i class="devicon-html5-plain"></i>
+    <span>HTML</span>
+  </div>
+
+  <div class="skill-card css">
+    <i class="devicon-css3-plain"></i>
+    <span>CSS</span>
+  </div>
+
+  <div class="skill-card js">
+    <i class="devicon-javascript-plain"></i>
+    <span>JavaScript</span>
+  </div>
+
+  <div class="skill-card react">
+    <i class="devicon-react-original"></i>
+    <span>React</span>
+  </div>
+
+  <div class="skill-card python">
+    <i class="devicon-python-plain"></i>
+    <span>Python</span>
+  </div>
+
+  <div class="skill-card c">
+    <i class="devicon-c-plain"></i>
+    <span>C</span>
+  </div>
+
+  <div class="skill-card cpp">
+    <i class="devicon-cplusplus-plain"></i>
+    <span>C++</span>
+  </div>
+
+  <div class="skill-card java">
+    <i class="devicon-java-plain"></i>
+    <span>Java</span>
+  </div>
+
+  <div class="skill-card php">
+    <i class="devicon-php-plain"></i>
+    <span>PHP</span>
+  </div>
+</div>
+
+  </section>
+    <div class="social-links">
+      <a id="linkedin" href="https://www.linkedin.com/in/sampy/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a id="github" href="https://github.com/Ssp64" target="_blank"><i class="fab fa-github"></i></a>
+      <a id="mail" href="https://mail.google.com/mail/?view=cm&fs=1&to=samyakt14@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a id="unstop" href="https://unstop.com/" target="_blank"><i class="fa-solid fa-bolt"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Samyak Tiwari. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+</body>
+</html>
