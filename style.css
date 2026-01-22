@@ -221,7 +221,7 @@ h2 {
 /* Projects */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(690px, 1fr));
   gap: 2rem;
   padding:20px
 }
