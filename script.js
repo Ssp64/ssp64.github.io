@@ -119,7 +119,7 @@ const parallaxItems = document.querySelectorAll(".parallax-item");
 let mouseX = null, mouseY = null;
 let scrollTop = 0;
 
-const repelRadius = 220;
+const repelRadius = 289;
 const repelForceFactor = 0.08;
 
 
