@@ -221,7 +221,7 @@ const timelines = {
     { title: "Tech Lead: Stellar Scholar", date: "2024", content: "Worked as Tech Lead in school coding club: Stellar Scholar"},
     {title:"My own Programming language: Can",date: "2025",content:"Created my Own non industrial programming language, interpreter designed over python"},
     {title:"Main Stream Programming",date: "Till Date",content:"Python, Java, Javascript, C, C++, Php"},
-    {title:"Started my own Coding club: \"Logiclly\"", date:"Sept 2025", content:"Launched my own coding club in my university ISC BHU,"}
+    {title:"Started my own Coding club: \"Logiclly\"", date:"Sept 2025", content:"Launched my own coding club in my university ISC BHU"}
   ],
   "Education": [
     { title: "Highschool completed", date: "2023", content: "Sunbeam BGN Varanasi" },
