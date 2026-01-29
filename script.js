@@ -218,6 +218,7 @@ const timelines = {
   "Experience": [
     { title: "Voice Assistant", date: "2022",content: "Created a Voice Assistant on Python" },
     { title: "Full Stack Developement", date: "2023",content: "HTML5, CSS/Tailwind CSS, Javascript, MERNStack" },
+    { title: "Tech Lead: Stellar Scholar", date: "2024"},
     {title:"My own Programming language: Can",date: "2025",content:"Created my Own non industrial programming language, interpreter designed over python"},
     {title:"Main Stream Programming",date: "Till Date",content:"Python, Java, Javascript, C, C++, Php"},
     {title:"Started my own Coding club: \"Logiclly\"", date:"Sept 2025", content:"Launched my own coding club in my university ISC BHU,"}
