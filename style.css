@@ -221,10 +221,11 @@ h2 {
 /* Projects */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* ALWAYS 2 */
   gap: 2rem;
-  padding:20px
+  padding: 20px;
 }
+
 
 .project-card {
   background: var(--bg);
@@ -743,4 +744,128 @@ section {
 section.visible {
   opacity: 1;
   transform: translateY(0);
+}
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    padding: 10px 16px;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 16px;
+    background: var(--bg);
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 1.2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  }
+
+  .nav-links li a {
+    font-size: 0.95rem;
+  }
+
+  /* HERO */
+  .hero {
+    height: auto;
+    padding: 5rem 1.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.9rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  /* ABOUT PANELS */
+  .about-panels {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .panel {
+    width: 100%;
+    max-width: 340px;
+    min-height: auto;
+  }
+
+  /* POPUP */
+  .popup-content {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.5rem;
+  }
+
+  .popup-text-area {
+    text-align: center;
+  }
+
+  /* PROJECTS */
+  .project-grid {
+    gap: 1rem;
+  }
+
+  .project-card {
+    padding: 0.8rem;
+  }
+
+  .project-card h3 {
+    font-size: 1rem;
+  }
+
+  .project-card p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .project-card a {
+    font-size: 0.85rem;
+  }
+  /* SKILLS */
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .skill-card i {
+    font-size: 2.2rem;
+  }
+
+  /* SOCIAL LINKS */
+  .social-links {
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+
+  /* SETTINGS POPUP */
+  #settings-popup {
+    right: 50%;
+    transform: translateX(50%);
+    width: 90%;
+  }
+}
+
+/* EXTRA SMALL PHONES */
+@media (max-width: 420px) {
+
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .panel h3 {
+    font-size: 1.3rem;
+  }
 }
