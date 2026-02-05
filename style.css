@@ -16,14 +16,14 @@ body {
 /* Light Mode */
 :root {
   --bg: #fdfdfd;
-  --text: #333333;
+  --text: #1b1b1b;
   --accent: #007bff;
   --accent-dark: #0056b3;
 }
 
 /* Dark Mode */
 body.dark {
-  --bg: #1e1e1e;
+  --bg: #171717;
   --text: #f0f0f0;
 }
 
@@ -1227,4 +1227,168 @@ section.visible {
   .journey-card::before{
     left:7px;
   }
+}
+/* =================================
+        PROJECTS — GLASS + IMAGES
+================================= */
+
+.projects-v2{
+  padding:7rem 2rem;
+  max-width:1300px;
+  margin:auto;
+  text-align:center;
+}
+
+.projects-title{
+  font-size:2.8rem;
+  margin-bottom:.4rem;
+}
+
+.projects-subtitle{
+  opacity:.6;
+  margin-bottom:4rem;
+}
+
+/* GRID */
+
+.projects-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:2.4rem;
+}
+
+/* CARD */
+
+.project-v2{
+  position:relative;
+  height:260px;
+  border-radius:22px;
+  overflow:hidden;
+  text-decoration:none;
+  color:white;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:1.8rem;
+
+  isolation:isolate;
+
+  transition:.45s;
+}
+
+/* IMAGE */
+
+.project-bg{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+
+  z-index:-2;
+  transition:.7s;
+}
+
+/* GRADIENT OVERLAY */
+
+.project-overlay{
+  position:absolute;
+  inset:0;
+
+  background:linear-gradient(
+      to top,
+      rgba(0,0,0,.85),
+      rgba(0,0,0,.45),
+      rgba(0,0,0,.15)
+  );
+
+  z-index:-1;
+}
+
+/* subtle inner shadow (depth magic) */
+
+.project-v2::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  border-radius:22px;
+  box-shadow: inset 0 0 120px rgba(0,0,0,.35);
+}
+
+/* BORDER GLOW */
+
+.project-v2::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  border-radius:22px;
+  padding:1px;
+
+  background:linear-gradient(
+    140deg,
+    transparent,
+    var(--accent),
+    transparent
+  );
+
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+
+  -webkit-mask-composite:xor;
+          mask-composite:exclude;
+
+  opacity:.25;
+  transition:.45s;
+}
+
+/* TEXT */
+
+.project-text{
+  position:relative;
+  z-index:2;
+}
+
+.project-text h3{
+  font-size:1.6rem;
+  margin-bottom:4px;
+}
+
+.project-text span{
+  font-size:.9rem;
+  opacity:.85;
+}
+
+/* HOVER CINEMA */
+
+.project-v2:hover{
+  transform:translateY(-12px) scale(1.02);
+
+  box-shadow:
+    0 30px 90px rgba(0,0,0,.45),
+    0 0 40px rgba(102,178,255,.25);
+}
+
+.project-v2:hover::before{
+  opacity:.9;
+}
+
+.project-v2:hover .project-bg{
+  transform:scale(1.12);
+  filter:brightness(.75);
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .projects-grid{
+    grid-template-columns:1fr;
+  }
+
+  .project-v2{
+    height:210px;
+  }
+
 }
