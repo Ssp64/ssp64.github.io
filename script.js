@@ -76,11 +76,10 @@ if (toggleBtn) toggleBtn.addEventListener("click", () => {
 
 // Typing effect
 const roles = [
-  "Developer",
+  "Full Stack Developer",
+  "Python Developer",
   "Programmer",
-  "Designer",
-  "Innovator",
-  "Thinker"
+  "Founder"
 ];
 
 const typingElement = document.querySelector(".typing-text");
