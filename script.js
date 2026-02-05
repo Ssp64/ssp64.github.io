@@ -76,11 +76,11 @@ if (toggleBtn) toggleBtn.addEventListener("click", () => {
 
 // Typing effect
 const roles = [
-  "Web Developer",
-  "Software Developer",
-  "fullStack Developer",
-  "pythonDev",
-  "polyglot programmer"
+  "Developer",
+  "Programmer",
+  "Designer",
+  "Innovator",
+  "Thinker"
 ];
 
 const typingElement = document.querySelector(".typing-text");
@@ -338,4 +338,12 @@ document.querySelectorAll("section").forEach(sec => {
     if (e.isIntersecting) sec.classList.add("visible");
   }, { threshold: 0.15 });
   obs.observe(sec);
+});
+// Close mobile menu on link click
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    if (window.innerWidth <= 768) {
+      navLinks.classList.remove("active");
+    }
+  });
 });
